@@ -23,6 +23,7 @@
 			<div class="col-md-1">
 				<h3>OSDAE</h3>
 			</div>
+
 			<div class="col-md-8">
 				<ul class="nav nav-tabs">
 			        <li class="active"><a href="#"><span class="glyphicon glyphicon-file"></span>  Computers</a></li>
@@ -44,8 +45,10 @@
 		</div>
 
 		<div class="row">
+			
 			<div class="col-md-1">
 			</div>
+
 		    <div class="col-md-11">
 			    <ul class="nav nav-pills">
 			        <li><a href="#"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></li>
@@ -66,6 +69,7 @@
 		<div/>
 
 	    <div class="row">
+			
 			<div class="col-md-2">
 				
 				<!-- Listas de ordenadores -->
@@ -140,13 +144,49 @@
 			        </div>
 			    </div>
 			</div>
+
 			<div class="col-md-7">
 				<h2>Computers</h2>
-				
 			</div>
-			<div class="col-md-2">
+			
+			<div class="col-md-3">
 				<h2>Details</h2>
-				
+			    <div class="row">
+			        <div class="col-xs-12">
+			            <a href="#" class="thumbnail">
+			                <img src="125x125.jpg" alt="125x125">
+			            </a>
+			        </div>
+			    </div>
+
+
+			    <form class="form-horizontal">
+			        <div class="form-group">
+			            <label for="inputHostname" class="control-label col-xs-2">Hostname</label>
+			            <div class="col-xs-10">
+			                <input type="hostname" class="form-control" id="inputHostname" placeholder="Hostname">
+			            </div>
+			        </div>
+			        <div class="form-group">
+			            <label for="inputIP" class="control-label col-xs-2">IP</label>
+		            	<div class="col-xs-10">
+			                <input type="ip" class="form-control" id="inputIP" placeholder="IP">
+			            </div>
+			        </div>
+			        <div class="form-group">
+			            <label for="inputMAC" class="control-label col-xs-2">MAC</label>
+		            	<div class="col-xs-10">
+			                <input type="mac" class="form-control" id="inputMAC" placeholder="MAC">
+			            </div>
+			        </div>
+			        
+			        <div class="form-group">
+			            <div class="col-xs-offset-2 col-xs-10">
+			                <button type="submit" class="btn btn-primary">Save</button>
+			            </div>
+			        </div>
+			    </form>
+
 			</div>
 		
 			<div class="clearfix visible-md-block"></div>
