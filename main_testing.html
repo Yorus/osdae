@@ -14,35 +14,110 @@
 </style>
 </head>
 <body>
-<div class="bs-example">
-	<ul class="nav nav-tabs">
-        <li class="active"><a href="#"><span class="glyphicon glyphicon-file"></span>  File</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> Help</a></li>
-    </ul>
-</div>
-<div class="bs-example">
-    <ul class="nav nav-pills">
-        <li><a href="#"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-arrow-right"></span> Go</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-    </ul>
-</div>
-<div class="container">
-    <div class="row">
-		<div class="col-xs-4">
-			<h2>Lists</h2>
-			
+	
+	<div class="container">
+		<div class="bs-example">
+			<ul class="nav nav-tabs">
+		        <li><h4>OSDAE</h4></li>
+		        <li class="active"><a href="#"><span class="glyphicon glyphicon-file"></span>  File</a></li>
+		        <li><a href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a></li>
+		        <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> Help</a></li>
+		    </ul>
 		</div>
-		<div class="col-xs-4">
-			<h2>Computers</h2>
-			
-		</div>
-		<div class="col-xs-4">
-			<h2>Details</h2>
-			
+		<div class="bs-example">
+		    <ul class="nav nav-pills">
+		        <li><a href="#"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></li>
+		        <li><a href="#"><span class="glyphicon glyphicon-arrow-right"></span> Go</a></li>
+		        <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+		    </ul>
 		</div>
 	</div>
-</div>
+	<div class="container">
+	    <div class="row">
+			<div class="col-xs-4">
+				<h2>Lists</h2>
+				
+				<!-- Listas de ordenadores -->
+
+			    <div class="list-group">
+			        <a href="#" class="list-group-item active">
+			            <span class="glyphicon glyphicon-list"></span> Class 1 <span class="badge">25</span>
+			        </a>
+			        <a href="#" class="list-group-item">
+			            <span class="glyphicon glyphicon-list"></span> Class 2 <span class="badge">145</span>
+			        </a>
+			        <a href="#" class="list-group-item">
+			            <span class="glyphicon glyphicon-list"></span> Class 3 <span class="badge">50</span>
+			        </a>
+			        <a href="#" class="list-group-item">
+			            <span class="glyphicon glyphicon-list"></span> Class 4 <span class="badge">8</span>
+			        </a>
+			    </div>
+
+			    <div id="accordion" class="panel-group">
+			        <div class="panel panel-default">
+			            <div class="panel-heading">
+			                <h4 class="panel-title">
+			                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Active Jobs</a>
+			                </h4>
+			            </div>
+			            <div id="collapseOne" class="panel-collapse collapse in">
+			                <div class="panel-body">
+							
+                			    <div class="list-group">
+							        <a href="#" class="list-group-item active">
+							            <span class="glyphicon glyphicon-play"></span> Job 1 <span class="badge">25</span>
+							        </a>
+							        <a href="#" class="list-group-item">
+							            <span class="glyphicon glyphicon-play"></span> Job 2 <span class="badge">145</span>
+							        </a>
+							        <a href="#" class="list-group-item">
+							            <span class="glyphicon glyphicon-play"></span> Job 3 <span class="badge">50</span>
+							        </a>
+							        <a href="#" class="list-group-item">
+							            <span class="glyphicon glyphicon-play"></span> Job 4 <span class="badge">8</span>
+							        </a>
+							    </div>
+
+			                </div>
+			            </div>
+			        </div>
+			        <div class="panel panel-default">
+			            <div class="panel-heading">
+			                <h4 class="panel-title">
+			                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Log</a>
+			                </h4>
+			            </div>
+			            <div id="collapseTwo" class="panel-collapse collapse in">
+			                <div class="panel-body">
+			                    <div class="list-group">
+							        <a href="#" class="list-group-item active">
+							            <span class="glyphicon glyphicon-ok"></span> Job 1 <span class="badge">25</span>
+							        </a>
+							        <a href="#" class="list-group-item">
+							            <span class="glyphicon glyphicon-ok"></span> Job 2 <span class="badge">145</span>
+							        </a>
+							        <a href="#" class="list-group-item">
+							            <span class="glyphicon glyphicon-ok"></span> Job 3 <span class="badge">50</span>
+							        </a>
+							        <a href="#" class="list-group-item">
+							            <span class="glyphicon glyphicon-ok"></span> Job 4 <span class="badge">8</span>
+							        </a>
+							    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+			<div class="col-xs-4">
+				<h2>Computers</h2>
+				
+			</div>
+			<div class="col-xs-4">
+				<h2>Details</h2>
+				
+			</div>
+		</div>
+	</div>
 </body>
 </html>                                		
