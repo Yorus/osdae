@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Example of Twitter Bootstrap 3 Tabs with Icons</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<title>Main testing page</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <style type="text/css">
     .bs-example{
-    	margin: 20px;
+    	margin: 1px;
     }
 </style>
 </head>
@@ -22,8 +22,16 @@
 		        <li class="active"><a href="#"><span class="glyphicon glyphicon-file"></span>  File</a></li>
 		        <li><a href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a></li>
 		        <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> Help</a></li>
+
+		        <li>
+			        <div class="input-group input-group-sm">
+	                    <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+	                    <input type="text" class="form-control">
+	                </div>
+            	</li>
 		    </ul>
 		</div>
+
 		<div class="bs-example">
 		    <ul class="nav nav-pills">
 		        <li><a href="#"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></li>
@@ -32,10 +40,17 @@
 		    </ul>
 		</div>
 	</div>
+	
+	<div class="container">
+	    <ul class="breadcrumb">
+	        <li><a href="#">Class 1</a></li>
+	        <li class="active">bbaa-lt1-23</li>
+	    </ul>
+	</div>
+
 	<div class="container">
 	    <div class="row">
 			<div class="col-xs-4">
-				<h2>Lists</h2>
 				
 				<!-- Listas de ordenadores -->
 
