@@ -197,45 +197,45 @@
 
 			<div class="col-md-7">
 				<h2>Computers</h2>
-				<table id="myTable" class="table">
+				<table id="myTable" class="table table-striped table-hover table-responsive">
 					<thead>
 					    <tr>
-					      <th>Last Name</th>
-					      <th>First Name</th>
-					      <th>Email</th>
-					      <th>Due</th>
-					      <th>Web Site</th>
+					    	<th></th>
+					      	<th>Hostname</th>
+					      	<th>IP</th>
+					      	<th>Boot Mode</th>
+					      	<th>Status</th>
 					    </tr>
 				  	</thead>
 				  	<tbody>
 					    <tr>
-						    <td>Smith</td>
-						    <td>John</td>
-						    <td>jsmith@gmail.com</td>
-						    <td>$50.00</td>
-						    <td>http://www.jsmith.com</td>
-					    </tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "1" /></td>
+						    <td>bbaa-lt1-23</td>
+						    <td>172.17.69.23</td>
+						    <td>MBR</td>
+						    <td>Off Line</td>
+						</tr>
 					    <tr>
-						    <td>Bach</td>
-						    <td>Frank</td>
-						    <td>fbach@yahoo.com</td>
-						    <td>$50.00</td>
-						    <td>http://www.frank.com</td>
-					    </tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "2" /></td>
+						    <td>bbaa-lt1-24</td>
+						    <td>172.17.69.24</td>
+						    <td>Boot Agent</td>
+						    <td>On Line</td>
+						</tr>
 					    <tr>
-						    <td>Doe</td>
-						    <td>Jason</td>
-						    <td>jdoe@hotmail.com</td>
-						    <td>$100.00</td>
-						    <td>http://www.jdoe.com</td>
-					    </tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "3" /></td>
+						    <td>bbaa-lt1-25</td>
+						    <td>172.17.69.25</td>
+						    <td>HD1 Part1</td>
+						    <td>On Line</td>
+						</tr>
 					    <tr>
-						    <td>Conway</td>
-						    <td>Tim</td>
-						    <td>tconway@earthlink.net</td>
-						    <td>$50.00</td>
-						    <td>http://www.timconway.com</td>
-					    </tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "4" /></td>
+						    <td>bbaa-lt1-26</td>
+						    <td>172.17.69.26</td>
+						    <td>HD2 Part2</td>
+						    <td>On Line</td>
+						</tr>
 				  	</tbody>
 				</table>
 			</div>
@@ -243,36 +243,42 @@
 			<div class="col-md-3">
 				<h2>Computer details</h2>
 			    <div class="row">
-			        <div class="col-xs-12">
-			            <a href="#" class="thumbnail">
-			                <img src="images/Computer-icon.png" alt="125x125">
-			            </a>
+			        <div class="col-md-12">
+			            	<img src="images/Computer-icon.png" class="img-responsive" alt="125x125">
+			            	<h4>bbaa-lt1-23</h4>
 			        </div>
 			    </div>
 
 
 			    <form class="form-horizontal">
 			        <div class="form-group">
-			            <label for="inputHostname" class="control-label col-xs-2">Hostname</label>
+			            <label for="inputHostname" class="control-label col-md-2">Hostname</label>
 			            <div class="col-xs-10">
 			                <input type="hostname" class="form-control" id="inputHostname" placeholder="Hostname">
 			            </div>
 			        </div>
 			        <div class="form-group">
-			            <label for="inputIP" class="control-label col-xs-2">IP</label>
+			            <label for="inputIP" class="control-label col-md-2">IP</label>
 		            	<div class="col-xs-10">
 			                <input type="ip" class="form-control" id="inputIP" placeholder="IP">
 			            </div>
 			        </div>
 			        <div class="form-group">
-			            <label for="inputMAC" class="control-label col-xs-2">MAC</label>
+			            <label for="inputMAC" class="control-label col-md-2">MAC</label>
 		            	<div class="col-xs-10">
 			                <input type="mac" class="form-control" id="inputMAC" placeholder="MAC">
 			            </div>
 			        </div>
 			        
 			        <div class="form-group">
-			            <div class="col-xs-offset-2 col-xs-10">
+			            <label for="inputBootMode" class="control-label col-md-2">Boot Mode</label>
+		            	<div class="col-xs-10">
+			                <input type="mac" class="form-control" id="inputBootMode" placeholder="Boot Mode">
+			            </div>
+			        </div>
+
+			        <div class="form-group">
+			            <div class="col-xs-offset-2 col-md-10">
 			                <button type="submit" class="btn btn-primary">Save</button>
 			            </div>
 			        </div>
