@@ -7,11 +7,58 @@
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+
+	<!-- load jQuery and tablesorter scripts -->
+	<script type="text/javascript" src="tablesorter/docs/js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="tablesorter/js/jquery.tablesorter.js"></script>
+
 	<style type="text/css">
 	    .bs-example{
 	    	margin: 1px;
 	    }
 	</style>
+
+	<!-- <style id="css">
+		th.tablesorter-header.resizable-false {
+			background-color: #e6bf99;
+		}
+		/* ensure box-sizing is set to content-box, if using jQuery versions older than 1.8;
+		 this page is using jQuery 1.4 */
+		*, *:before, *:after {
+			-moz-box-sizing: content-box;
+			-webkit-box-sizing: content-box;
+			box-sizing: content-box;
+		}
+	</style>
+
+	<script id="js">
+		$(function() {
+
+			$("table:first").tablesorter({
+				theme : 'blue',
+				// initialize zebra striping and resizable widgets on the table
+				widgets: [ "zebra", "resizable" ],
+				widgetOptions: {
+					resizable_addLastColumn : true
+				}
+			});
+
+			$("table:last").tablesorter({
+				theme : 'blue',
+				// initialize zebra striping and resizable widgets on the table
+				widgets: [ "zebra", "resizable" ],
+				widgetOptions: {
+					resizable: true,
+					// These are the default column widths which are used when the table is
+					// initialized or resizing is reset; note that the "Age" column is not
+					// resizable, but the width can still be set to 40px here
+					resizable_widths : [ '10%', '10%', '40px', '10%', '100px' ]
+				}
+			});
+
+		});
+	</script> -->
+
 </head>
 
 <body>
@@ -150,6 +197,47 @@
 
 			<div class="col-md-7">
 				<h2>Computers</h2>
+				<table id="myTable" class="table">
+					<thead>
+					    <tr>
+					      <th>Last Name</th>
+					      <th>First Name</th>
+					      <th>Email</th>
+					      <th>Due</th>
+					      <th>Web Site</th>
+					    </tr>
+				  	</thead>
+				  	<tbody>
+					    <tr>
+						    <td>Smith</td>
+						    <td>John</td>
+						    <td>jsmith@gmail.com</td>
+						    <td>$50.00</td>
+						    <td>http://www.jsmith.com</td>
+					    </tr>
+					    <tr>
+						    <td>Bach</td>
+						    <td>Frank</td>
+						    <td>fbach@yahoo.com</td>
+						    <td>$50.00</td>
+						    <td>http://www.frank.com</td>
+					    </tr>
+					    <tr>
+						    <td>Doe</td>
+						    <td>Jason</td>
+						    <td>jdoe@hotmail.com</td>
+						    <td>$100.00</td>
+						    <td>http://www.jdoe.com</td>
+					    </tr>
+					    <tr>
+						    <td>Conway</td>
+						    <td>Tim</td>
+						    <td>tconway@earthlink.net</td>
+						    <td>$50.00</td>
+						    <td>http://www.timconway.com</td>
+					    </tr>
+				  	</tbody>
+				</table>
 			</div>
 			
 			<div class="col-md-3">
@@ -157,7 +245,7 @@
 			    <div class="row">
 			        <div class="col-xs-12">
 			            <a href="#" class="thumbnail">
-			                <img src="125x125.jpg" alt="125x125">
+			                <img src="images/Computer-icon.png" alt="125x125">
 			            </a>
 			        </div>
 			    </div>
