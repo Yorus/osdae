@@ -115,7 +115,7 @@
 			<div class="col-sm-12">
 			    <ul class="breadcrumb">
 			    	<li><a href="#">OSDAE srv 1</a></li>
-			        <li><a href="#">Building 1</a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-list"></span> Building 1</a></li>
 			        <li class="active">eng-23</li>
 			    </ul>
 			<div/>
@@ -150,7 +150,7 @@
 			        <div class="panel panel-default">
 			            <div class="panel-heading">
 			                <h4 class="panel-title">
-			                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Active Jobs</a>
+			                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-tasks"></span> Active Jobs</a>
 			                </h4>
 			            </div>
 			            <div id="collapseOne" class="panel-collapse collapse in">
@@ -177,13 +177,13 @@
 			        <div class="panel panel-default">
 			            <div class="panel-heading">
 			                <h4 class="panel-title">
-			                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Log</a>
+			                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-pencil"></span> Log</a>
 			                </h4>
 			            </div>
 			            <div id="collapseTwo" class="panel-collapse collapse in">
 			                <div class="panel-body">
 			                    <div class="list-group">
-							        <a href="#" class="list-group-item">
+							        <a href="#" class="list-group-item alert alert-warning">
 							            <span class="glyphicon glyphicon-warning-sign"></span> Job 4 <span class="badge">24/25</span>
 							        </a>
 							        <a href="#" class="list-group-item">
@@ -280,8 +280,15 @@
 			        <div class="form-group">
 			            <label for="inputBootMode" class="control-label col-md-2">Boot Mode</label>
 		            	<div class="col-xs-10">
-			                <input type="mac" class="form-control" id="inputBootMode" placeholder="Boot Mode">
-			            </div>
+                            <select class="form-control" id="inputBootMode">
+                                  <option>MBR</option>
+                                  <option>HD1 Part1</option>
+                                  <option>HD1 Part2</option>
+                                  <option>HD1 Part3</option>
+                                  <option>Boot Agent</option>
+                            </select>
+			                <!--<input type="mac" class="form-control" id="inputBootMode" placeholder="Boot Mode">
+			            </div>-->
 			        </div>
 
 			        <div class="form-group">
