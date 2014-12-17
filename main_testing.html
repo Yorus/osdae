@@ -99,39 +99,24 @@
 		
 		</div> <!-- head row -->
 
-		<!-- SubMenu row -->
-		<div class="row">
-			            
-			<div class="col-sm-1">
-			</div>
-
-		    <div class="col-sm-8">
-			    <ul class="nav nav-pills">
-			        <li><a href="#"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></li>
-			        <li><a href="#"><span class="glyphicon glyphicon-arrow-right"></span> Go</a></li>
-			        <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-			    </ul>
-			</div>
-            
-            <div class="col-sm-3">
-                <ul class="nav nav-pills">
-                    <li><a href="#"><span class="glyphicon glyphicon-th"></span> Grid</a></li>
-			        <li class="active"><a href="#"><span class="glyphicon glyphicon-th-list"></span> List</a></li>
-			        <li><a href="#"><span class="glyphicon glyphicon-map-marker"></span> Map</a></li>
-			    </ul>
-            </div>
-		
-        </div> <!-- SubMenu row -->
         	
         <!-- Breadcrumb row -->
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-sm-8">
 			    <ul class="breadcrumb">
+			        <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
 			    	<li><a href="#">OSDAE srv 1</a></li>
 			        <li><a href="#"><span class="glyphicon glyphicon-globe"></span> All Computers</a></li>
 			        <li class="active">eng-23</li>
 			    </ul>
-            </div>
+				</div>
+		   <div class="col-sm-4">
+			    <ul class="breadcrumb">
+			        <li><a href="#"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-arrow-right"></span> Go</a></li>
+			    </ul>
+			</div>
+
         </div> <!-- Breadcrumb row -->
         
         <!-- Content Row -->
@@ -223,6 +208,12 @@
 			<!-- Center Column -->
             <div class="col-sm-7">
 				<h2><span class="glyphicon glyphicon-globe"></span> All Computers <span class="badge">228</span></h2>
+				<ul class="nav nav-pills">
+                    <li><a href="#"><span class="glyphicon glyphicon-th"></span> Grid</a></li>
+			        <li class="active"><a href="#"><span class="glyphicon glyphicon-th-list"></span> List</a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-map-marker"></span> Map</a></li>
+			    </ul>
+ 
 				<table id="myTable" class="table table-striped table-hover table-responsive">
 					<thead>
 					    <tr>
@@ -348,8 +339,11 @@
 						</tr>
 				  	</tbody>
 				</table>
+
 			</div><!-- Center Column -->
-			
+			<div class="col-sm-3">
+           </div>
+	
             <!-- Right column -->
 			<div class="col-sm-3">
 				<h2>Computer details</h2>
