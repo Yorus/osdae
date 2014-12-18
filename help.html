@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Config mobile friendly -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Copmuters page</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- load tablesorter scripts and stylesheet -->
+	<!--
+    <link rel="stylesheet" href="tablesorter/css/theme.bootstrap.css">
+	<script type="text/javascript" src="tablesorter/js/jquery.tablesorter.js"></script>
+    <script type="text/javascript" src="tablesorter/js/jquery.tablesorter.widgets.js"></script>
+
+    <script id="js">
+        $(document).ready(function() 
+            { 
+                $("#myTable").tablesorter(); 
+            } 
+        );
+    </script> -->
+	
+
+	
+
+</head>
+
+<body>
+	
+	<div class="container-fluid">
+		
+		<!-- head row -->
+		<div class="row">
+			
+			<div class="col-sm-1">
+				<a href="index.html"><h3 class="text-center"><span class="glyphicon glyphicon-tasks"></span> OSDAE</h3></a>
+			</div>
+            
+            <!-- Menu -->
+			<div class="col-sm-8">
+				<ul class="nav nav-tabs">
+			        <li class="active"><a href="#"><span class="glyphicon glyphicon-file"></span>  Computers</a></li>
+			        <li><a href="images.html"><span class="glyphicon glyphicon-hdd"></span> Images</a></li>
+			        <li><a href="servers.html"><span class="glyphicon glyphicon-cloud"></span> Servers</a></li>
+			        <li><a href="scan.html"><span class="glyphicon glyphicon-eye-open"></span> Scan</a></li>
+			        <li><a href="settings.html"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+			        <li><a href="help.html"><span class="glyphicon glyphicon-question-sign"></span> Help</a></li>
+                    <li><a href="logout.html"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+   			    </ul>
+		    </div><!-- Menu -->
+            
+            <!-- Search -->
+		    <div class="col-sm-3">
+		    	<div class="input-group input-group-sm">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+                    <input type="text" class="form-control" placeholder="search">
+            	</div>
+        	</div><!-- Search -->
+		
+		</div> <!-- head row -->
+
+        	
+        <!-- Breadcrumb row -->
+		<div class="row">
+			<div class="col-sm-8">
+			    <ul class="breadcrumb">
+			        <li><a href="#"><span class="glyphicon glyphicon-home"></span> OSDAE srv 1</a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-globe"></span> All Computers</a></li>
+			        <li class="active">eng-23</li>
+			    </ul>
+				</div>
+		   <div class="col-sm-4">
+			    <ul class="breadcrumb">
+			        <li><a href="#"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-arrow-right"></span> Go</a></li>
+			    </ul>
+			</div>
+
+        </div> <!-- Breadcrumb row -->
+        
+        <!-- Content Row -->
+	    <div class="row">
+			
+            <!-- Left Column -->
+			<div class="col-sm-2">
+				
+				<!-- Computer lists -->
+			    <div class="list-group">
+			    	<a href="#" class="list-group-item active">
+			            <span class="glyphicon glyphicon-globe"></span> All Computers <span class="badge">228</span>
+			        </a>
+			        <a href="#" class="list-group-item">
+			            <span class="glyphicon glyphicon-list"></span> Building 1 <span class="badge">25</span>
+			        </a>
+			        <a href="#" class="list-group-item">
+			            <span class="glyphicon glyphicon-list"></span> Buliding 2 <span class="badge">145</span>
+			        </a>
+			        <a href="#" class="list-group-item">
+			            <span class="glyphicon glyphicon-list"></span> Building 3 <span class="badge">50</span>
+			        </a>
+			        <a href="#" class="list-group-item">
+			            <span class="glyphicon glyphicon-list"></span> Building 4 <span class="badge">8</span>
+			        </a>
+			    </div> <!-- Computer lists -->
+
+                
+			    <div id="accordion" class="panel-group">
+			    	<!-- Active Jobs -->
+			        <div class="panel panel-default"> 
+			            <div class="panel-heading">
+			                <h4 class="panel-title">
+			                    <a data-toggle="collapse" data-target="#collapseOne" href="#collapseOne"><span class="glyphicon glyphicon-tasks"></span> Active Jobs</a>
+			                </h4>
+			            </div>
+			            <div id="collapseOne" class="panel-collapse collapse in">
+			                <div class="panel-body">
+							
+                			    <div class="list-group">
+							        <a href="#" class="list-group-item">
+							            <span class="glyphicon glyphicon-pause"></span> Job 8 <span class="badge">0/25</span>
+							        </a>
+							        <a href="#" class="list-group-item">
+							            <span class="glyphicon glyphicon-pause"></span> Job 7 <span class="badge">0/145</span>
+							        </a>
+							        <a href="#" class="list-group-item">
+							            <span class="glyphicon glyphicon-pause"></span> Job 6 <span class="badge">0/50</span>
+							        </a>
+							        <a href="#" class="list-group-item">
+							            <span class="glyphicon glyphicon-play"></span> Job 5 <span class="badge">2/8</span>
+							        </a>
+                                </div>
+
+			                </div>
+			            </div>
+			        </div> <!-- Active Jobs -->
+                    
+                    <!-- Log -->
+			        <div class="panel panel-default">
+			            <div class="panel-heading">
+			                <h4 class="panel-title">
+			                    <a data-toggle="collapse" data-target="#collapseTwo" href="#collapseTwo"><span class="glyphicon glyphicon-pencil"></span> Log</a>
+			                </h4>
+			            </div>
+			            <div id="collapseTwo" class="panel-collapse collapse in">
+			                <div class="panel-body">
+			                    <div class="list-group">
+							        <a href="#" class="list-group-item alert alert-warning">
+							            <span class="glyphicon glyphicon-warning-sign"></span> Job 4 <span class="badge">24/25</span>
+							        </a>
+							        <a href="#" class="list-group-item">
+							            <span class="glyphicon glyphicon-ok"></span> Job 3 <span class="badge">145</span>
+							        </a>
+							        <a href="#" class="list-group-item">
+							            <span class="glyphicon glyphicon-ok"></span> Job 2 <span class="badge">50</span>
+							        </a>
+							        <a href="#" class="list-group-item">
+							            <span class="glyphicon glyphicon-ok"></span> Job 1 <span class="badge">8</span>
+							        </a>
+							    </div>
+			                </div>
+			            </div>
+			        </div><!-- Log -->
+			    </div>
+			</div><!-- Left Column -->
+            
+
+			<!-- Center Column -->
+            <div class="col-sm-7">
+                
+                <!-- Content Row -->
+                <div class="row">
+                
+                    <!-- Left Column -->
+                    <div class="col-sm-6">
+                        <h2><span class="glyphicon glyphicon-globe"></span> All Computers <span class="badge">228</span></h2>
+				    </div><!-- Left Column -->
+                                    
+                    <!-- Right Column -->
+                    <div class="col-sm-6">
+                        <ul class="nav nav-pills pull-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-th"></span> Grid</a></li>
+                            <li class="active"><a href="#"><span class="glyphicon glyphicon-th-list"></span> List</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-map-marker"></span> Map</a></li>
+                        </ul>
+                    </div><!-- Right Column -->
+                
+                </div><!-- Content Row -->
+                
+                    
+ 
+				<table id="myTable" class="table table-condensed table-striped table-hover table-responsive">
+					<thead>
+					    <tr>
+					    	<th><input type = "checkbox" id = "computer_id" value = "1" /></th>
+					      	<th>Hostname</th>
+					      	<th>IP</th>
+					      	<th>Boot Mode</th>
+					      	<th>Status</th>
+					    </tr>
+				  	</thead>
+				  	<tbody>
+					    <tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "1" /></td>
+						    <td>eng-23</td>
+						    <td>172.17.120.23</td>
+						    <td>MBR</td>
+						    <td>Off Line</td>
+						</tr>
+					    <tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "2" /></td>
+						    <td>eng-24</td>
+						    <td>172.17.120.24</td>
+						    <td>Boot Agent</td>
+						    <td>On Line</td>
+						</tr>
+					    <tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "3" /></td>
+						    <td>eng-25</td>
+						    <td>172.17.120.25</td>
+						    <td>HD1 Part1</td>
+						    <td>On Line</td>
+						</tr>
+					    <tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "4" /></td>
+						    <td>eng-26</td>
+						    <td>172.17.120.26</td>
+						    <td>HD2 Part2</td>
+						    <td>On Line</td>
+						</tr>
+                        <tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "1" /></td>
+						    <td>eng-27</td>
+						    <td>172.17.120.27</td>
+						    <td>MBR</td>
+						    <td>Off Line</td>
+						</tr>
+					    <tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "2" /></td>
+						    <td>eng-28</td>
+						    <td>172.17.120.28</td>
+						    <td>Boot Agent</td>
+						    <td>On Line</td>
+						</tr>
+					    <tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "3" /></td>
+						    <td>eng-29</td>
+						    <td>172.17.120.29</td>
+						    <td>HD1 Part1</td>
+						    <td>On Line</td>
+						</tr>
+					    <tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "4" /></td>
+						    <td>eng-30</td>
+						    <td>172.17.120.30</td>
+						    <td>HD2 Part2</td>
+						    <td>On Line</td>
+						</tr>
+                        <tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "1" /></td>
+						    <td>eng-31</td>
+						    <td>172.17.120.31</td>
+						    <td>MBR</td>
+						    <td>Off Line</td>
+						</tr>
+					    <tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "2" /></td>
+						    <td>eng-32</td>
+						    <td>172.17.120.32</td>
+						    <td>Boot Agent</td>
+						    <td>On Line</td>
+						</tr>
+					    <tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "3" /></td>
+						    <td>eng-33</td>
+						    <td>172.17.120.33</td>
+						    <td>HD1 Part1</td>
+						    <td>On Line</td>
+						</tr>
+					    <tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "4" /></td>
+						    <td>eng-34</td>
+						    <td>172.17.120.34</td>
+						    <td>HD2 Part2</td>
+						    <td>On Line</td>
+						</tr>
+                        <tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "1" /></td>
+						    <td>eng-35</td>
+						    <td>172.17.120.35</td>
+						    <td>MBR</td>
+						    <td>Off Line</td>
+						</tr>
+					    <tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "2" /></td>
+						    <td>eng-36</td>
+						    <td>172.17.120.36</td>
+						    <td>Boot Agent</td>
+						    <td>On Line</td>
+						</tr>
+					    <tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "3" /></td>
+						    <td>eng-37</td>
+						    <td>172.17.120.37</td>
+						    <td>HD1 Part1</td>
+						    <td>On Line</td>
+						</tr>
+					    <tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "4" /></td>
+						    <td>eng-38</td>
+						    <td>172.17.120.38</td>
+						    <td>HD2 Part2</td>
+						    <td>On Line</td>
+						</tr>
+				  	</tbody>
+				</table>
+
+			</div><!-- Center Column -->
+	
+            <!-- Right column -->
+			<div class="col-sm-3">
+				<h2>Computer details</h2>
+			    <img src="images/Computer-icon.png" class="img-responsive center-block" alt="125x125">
+			    <h2 class="text-center">eng-23</h2>
+			    <form class="form-horizontal">
+			        <div class="form-group">
+			            <label for="inputHostname" class="control-label col-md-2">Hostname</label>
+			            <div class="col-xs-10">
+			                <input type="hostname" class="form-control" id="inputHostname" placeholder="Hostname">
+			            </div>
+			        </div>
+			        <div class="form-group">
+			            <label for="inputIP" class="control-label col-md-2">IP</label>
+		            	<div class="col-xs-10">
+			                <input type="ip" class="form-control" id="inputIP" placeholder="IP">
+			            </div>
+			        </div>
+			        <div class="form-group">
+			            <label for="inputMAC" class="control-label col-md-2">MAC</label>
+		            	<div class="col-xs-10">
+			                <input type="mac" class="form-control" id="inputMAC" placeholder="MAC">
+			            </div>
+			        </div>
+			        
+			        <div class="form-group">
+			            <label for="inputBootMode" class="control-label col-md-2">Boot Mode</label>
+		            	<div class="col-xs-10">
+                            <select class="form-control" id="inputBootMode">
+                                <option>MBR</option>
+                                <option>Boot Agent</option>
+                                <option>HD1 Part1</option>
+                                <option>HD1 Part2</option>
+                                <option>HD1 Part3</option>
+                                <option>HD2 Part1</option>
+                                <option>HD2 Part2</option>
+                                <option>HD2 Part3</option>
+                            </select>
+			            </div>
+                    </div>
+
+			        <div class="form-group">
+			            <div class="col-xs-offset-2 col-md-10">
+			                <button type="submit" class="btn btn-primary">Save</button>
+			            </div>
+			        </div>
+			    </form>
+
+			</div><!-- Right column -->
+		
+            <div class="clearfix visible-sm-block"></div>
+		
+        </div><!-- Content Row -->
+
+        <!-- Footer -->
+        <div class="row">
+            <div class="col-sm-12">
+                    <h4 class="text-center"><a href="index.html"><span class="glyphicon glyphicon-tasks"></span> OSDAE</a> is GPLv3 Software</h4>
+            </div>
+        </div><!-- Footer -->
+    
+    </div><!-- Container -->
+    
+    
+
+</body>
+</html>                                		

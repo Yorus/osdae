@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Config mobile friendly -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Scan</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- load tablesorter scripts and stylesheet -->
+	<!--
+    <link rel="stylesheet" href="tablesorter/css/theme.bootstrap.css">
+	<script type="text/javascript" src="tablesorter/js/jquery.tablesorter.js"></script>
+    <script type="text/javascript" src="tablesorter/js/jquery.tablesorter.widgets.js"></script>
+
+    <script id="js">
+        $(document).ready(function() 
+            { 
+                $("#myTable").tablesorter(); 
+            } 
+        );
+    </script> -->
+	
+
+	
+
+</head>
+
+<body>
+	
+	<div class="container-fluid">
+		
+		<!-- head row -->
+		<div class="row">
+			
+			<div class="col-sm-1">
+				<a href="index.html"><h3 class="text-center"><span class="glyphicon glyphicon-tasks"></span> OSDAE</h3></a>
+			</div>
+            
+            <!-- Menu -->
+			<div class="col-sm-8">
+				<ul class="nav nav-tabs">
+			        <li><a href="computers.html"><span class="glyphicon glyphicon-file"></span>  Computers</a></li>
+			        <li><a href="images.html"><span class="glyphicon glyphicon-hdd"></span> Images</a></li>
+			        <li><a href="servers.html"><span class="glyphicon glyphicon-cloud"></span> Servers</a></li>
+			        <li class="active"><a href="#"><span class="glyphicon glyphicon-eye-open"></span> Scan</a></li>
+			        <li><a href="settings.html"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+			        <li><a href="help.html"><span class="glyphicon glyphicon-question-sign"></span> Help</a></li>
+                    <li><a href="logout.html"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+   			    </ul>
+		    </div><!-- Menu -->
+            
+            <!-- Search -->
+		    <div class="col-sm-3">
+		    	<div class="input-group input-group-sm">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+                    <input type="text" class="form-control" placeholder="search">
+            	</div>
+        	</div><!-- Search -->
+		
+		</div> <!-- head row -->
+
+        <!-- Menu row -->
+        <div class="row">
+            <div class="col-sm-1">
+				
+			</div>
+            <div class="col-sm-11">
+                <ul class="nav nav-pills">
+                    <li><a href="#"><span class="glyphicon glyphicon-tent"></span>  Local Network</a></li>
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> Network Range</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Network Address</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-import"></span> Import File</a></li>
+                </ul>
+            </div>
+        </div><!-- Menu row -->
+        	
+        <!-- Breadcrumb row -->
+		<div class="row">
+			<div class="col-sm-8">
+			    <ul class="breadcrumb">
+			        <li><a href="#"><span class="glyphicon glyphicon-home"></span> OSDAE srv 1</a></li>
+			    </ul>
+				</div>
+		   <div class="col-sm-4">
+			    <ul class="breadcrumb">
+			        <li><a href="#"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-arrow-right"></span> Go</a></li>
+			    </ul>
+			</div>
+
+        </div> <!-- Breadcrumb row -->
+        
+        <!-- Content Row -->
+	    <div class="row">
+			
+            <!-- Left Column -->
+			<div class="col-sm-2">
+				
+				<!-- Computer lists -->
+			    <div class="list-group">
+			    	<a href="#" class="list-group-item">
+			            <span class="glyphicon glyphicon-globe"></span> All Computers <span class="badge">228</span>
+			        </a>
+			        <a href="#" class="list-group-item">
+			            <span class="glyphicon glyphicon-list"></span> Building 1 <span class="badge">25</span>
+			        </a>
+			        <a href="#" class="list-group-item">
+			            <span class="glyphicon glyphicon-list"></span> Buliding 2 <span class="badge">145</span>
+			        </a>
+			        <a href="#" class="list-group-item">
+			            <span class="glyphicon glyphicon-list"></span> Building 3 <span class="badge">50</span>
+			        </a>
+			        <a href="#" class="list-group-item">
+			            <span class="glyphicon glyphicon-list"></span> Building 4 <span class="badge">8</span>
+			        </a>
+			    </div> <!-- Computer lists -->
+
+                
+			    <div id="accordion" class="panel-group">
+			    	<!-- Active Jobs -->
+			        <div class="panel panel-default"> 
+			            <div class="panel-heading">
+			                <h4 class="panel-title">
+			                    <a data-toggle="collapse" data-target="#collapseOne" href="#collapseOne"><span class="glyphicon glyphicon-tasks"></span> Active Jobs</a>
+			                </h4>
+			            </div>
+			            <div id="collapseOne" class="panel-collapse collapse in">
+			                <div class="panel-body">
+							
+                			    <div class="list-group">
+							        <a href="#" class="list-group-item">
+							            <span class="glyphicon glyphicon-pause"></span> Job 8 <span class="badge">0/25</span>
+							        </a>
+							        <a href="#" class="list-group-item">
+							            <span class="glyphicon glyphicon-pause"></span> Job 7 <span class="badge">0/145</span>
+							        </a>
+							        <a href="#" class="list-group-item">
+							            <span class="glyphicon glyphicon-pause"></span> Job 6 <span class="badge">0/50</span>
+							        </a>
+							        <a href="#" class="list-group-item">
+							            <span class="glyphicon glyphicon-play"></span> Job 5 <span class="badge">2/8</span>
+							        </a>
+                                </div>
+
+			                </div>
+			            </div>
+			        </div> <!-- Active Jobs -->
+                    
+                    <!-- Log -->
+			        <div class="panel panel-default">
+			            <div class="panel-heading">
+			                <h4 class="panel-title">
+			                    <a data-toggle="collapse" data-target="#collapseTwo" href="#collapseTwo"><span class="glyphicon glyphicon-pencil"></span> Log</a>
+			                </h4>
+			            </div>
+			            <div id="collapseTwo" class="panel-collapse collapse in">
+			                <div class="panel-body">
+			                    <div class="list-group">
+							        <a href="#" class="list-group-item alert alert-warning">
+							            <span class="glyphicon glyphicon-warning-sign"></span> Job 4 <span class="badge">24/25</span>
+							        </a>
+							        <a href="#" class="list-group-item">
+							            <span class="glyphicon glyphicon-ok"></span> Job 3 <span class="badge">145</span>
+							        </a>
+							        <a href="#" class="list-group-item">
+							            <span class="glyphicon glyphicon-ok"></span> Job 2 <span class="badge">50</span>
+							        </a>
+							        <a href="#" class="list-group-item">
+							            <span class="glyphicon glyphicon-ok"></span> Job 1 <span class="badge">8</span>
+							        </a>
+							    </div>
+			                </div>
+			            </div>
+			        </div><!-- Log -->
+			    </div>
+			</div><!-- Left Column -->
+            
+
+			<!-- Center Column -->
+            <div class="col-sm-7">
+                
+                <!-- Content Row -->
+                <div class="row">
+                
+                    <!-- Left Column -->
+                    <div class="col-sm-6">
+                        
+				    </div><!-- Left Column -->
+                                    
+                    <!-- Right Column -->
+                    <div class="col-sm-6">
+                        <ul class="nav nav-pills pull-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-th"></span> Grid</a></li>
+                            <li class="active"><a href="#"><span class="glyphicon glyphicon-th-list"></span> List</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-map-marker"></span> Map</a></li>
+                        </ul>
+                    </div><!-- Right Column -->
+                
+                </div><!-- Content Row -->
+                                 
+			</div><!-- Center Column -->
+	
+            <!-- Right column -->
+			<div class="col-sm-3">
+                
+                <h2><span class="glyphicon glyphicon-user"></span> Network Range</h2>
+                
+                <!-- IP Range form -->
+                <form class="form-inline" role="form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label class="sr-only" for="InitialIPAddress">Initial IP address</label>
+                            <input type="email" class="form-control" id="InitialIPAddress" placeholder="Initial IP address">
+                        </div>
+                    </div>
+                    <span class="glyphicon glyphicon-triangle-right"></span>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label class="sr-only" for="EndIPAddress">End IP address</label>
+                            <input type="password" class="form-control" id="EndIPAddress" placeholder="End IP address">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-refresh"></span></button>
+                </form><!-- IP Range form -->
+                
+			</div><!-- Right column -->
+		
+            <div class="clearfix visible-sm-block"></div>
+		
+        </div><!-- Content Row -->
+
+        <!-- Footer -->
+        <div class="row">
+            <div class="col-sm-12">
+                    <h4 class="text-center"><a href="index.html"><span class="glyphicon glyphicon-tasks"></span> OSDAE</a> is GPLv3 Software</h4>
+            </div>
+        </div><!-- Footer -->
+    
+    </div><!-- Container -->
+    
+    
+
+</body>
+</html>                                		
