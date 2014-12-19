@@ -6,7 +6,7 @@
 	<!-- Config mobile friendly -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Copmuters page</title>
+	<title>Servers page</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
@@ -72,10 +72,9 @@
 			<div class="col-sm-8">
 			    <ul class="breadcrumb">
 			        <li><a href="#"><span class="glyphicon glyphicon-home"></span> OSDAE srv 1</a></li>
-			        <li><a href="#"><span class="glyphicon glyphicon-globe"></span> All Computers</a></li>
-			        <li class="active">eng-23</li>
-			    </ul>
-				</div>
+			        <li class="active"><span class="glyphicon glyphicon-globe"></span> All Servers</li>
+			      </ul>
+            </div>
 		   <div class="col-sm-4">
 			    <ul class="breadcrumb">
 			        <li><a href="#"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></li>
@@ -91,24 +90,24 @@
             <!-- Left Column -->
 			<div class="col-sm-2">
 				
-				<!-- Computer lists -->
+				<!-- Servers lists -->
 			    <div class="list-group">
 			    	<a href="#" class="list-group-item active">
-			            <span class="glyphicon glyphicon-globe"></span> All Computers <span class="badge">228</span>
+			            <span class="glyphicon glyphicon-align-justify"></span> All Servers <span class="badge">4</span>
 			        </a>
 			        <a href="#" class="list-group-item">
-			            <span class="glyphicon glyphicon-list"></span> Building 1 <span class="badge">25</span>
+			            <span class="glyphicon glyphicon-minus"></span> OSDAEimg srv 1 <span class="badge">25</span>
 			        </a>
 			        <a href="#" class="list-group-item">
-			            <span class="glyphicon glyphicon-list"></span> Buliding 2 <span class="badge">145</span>
+			            <span class="glyphicon glyphicon-minus"></span> OSDAEimg srv 2 <span class="badge">145</span>
 			        </a>
 			        <a href="#" class="list-group-item">
-			            <span class="glyphicon glyphicon-list"></span> Building 3 <span class="badge">50</span>
+			            <span class="glyphicon glyphicon-minus"></span> OSDAEimg srv 3 <span class="badge">50</span>
 			        </a>
 			        <a href="#" class="list-group-item">
-			            <span class="glyphicon glyphicon-list"></span> Building 4 <span class="badge">8</span>
+			            <span class="glyphicon glyphicon-minus"></span> OSDAEimg srv 4 <span class="badge">8</span>
 			        </a>
-			    </div> <!-- Computer lists -->
+			    </div> <!-- Servers lists -->
 
                 
 			    <div id="accordion" class="panel-group">
@@ -179,7 +178,7 @@
                 
                     <!-- Left Column -->
                     <div class="col-sm-6">
-                        <h2><span class="glyphicon glyphicon-globe"></span> All Computers <span class="badge">228</span></h2>
+                        <h2><span class="glyphicon glyphicon-align-justify"></span> All Servers <span class="badge">4</span></h2>
 				    </div><!-- Left Column -->
                                     
                     <!-- Right Column -->
@@ -200,132 +199,77 @@
 					    <tr>
 					    	<th><input type = "checkbox" id = "computer_id" value = "1" /></th>
 					      	<th>Hostname</th>
-					      	<th>IP</th>
-					      	<th>Boot Mode</th>
-					      	<th>Status</th>
+					      	<th>Size</th>   
+                            <th>Used</th>
+                            <th>Available</th>
+                            <th>Capacity</th>
 					    </tr>
 				  	</thead>
 				  	<tbody>
 					    <tr>
 					    	<td><input type = "checkbox" id = "computer_id" value = "1" /></td>
-						    <td>eng-23</td>
-						    <td>172.17.120.23</td>
-						    <td>MBR</td>
-						    <td>Off Line</td>
+						    <td>OSDAEimg srv 1</td>
+						    <td>200GB</td>
+						    <td>20GB</td>
+						    <td>180GB</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+                                    10%
+                                    </div>
+                                </div>
+                            </td>
 						</tr>
 					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "2" /></td>
-						    <td>eng-24</td>
-						    <td>172.17.120.24</td>
-						    <td>Boot Agent</td>
-						    <td>On Line</td>
-						</tr>
-					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "3" /></td>
-						    <td>eng-25</td>
-						    <td>172.17.120.25</td>
-						    <td>HD1 Part1</td>
-						    <td>On Line</td>
-						</tr>
-					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "4" /></td>
-						    <td>eng-26</td>
-						    <td>172.17.120.26</td>
-						    <td>HD2 Part2</td>
-						    <td>On Line</td>
-						</tr>
-                        <tr>
 					    	<td><input type = "checkbox" id = "computer_id" value = "1" /></td>
-						    <td>eng-27</td>
-						    <td>172.17.120.27</td>
-						    <td>MBR</td>
-						    <td>Off Line</td>
+						    <td>OSDAEimg srv 2</td>
+						    <td>200GB</td>
+						    <td>100GB</td>
+						    <td>100GB</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                    50%
+                                    </div>
+                                </div>
+                            </td>
 						</tr>
 					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "2" /></td>
-						    <td>eng-28</td>
-						    <td>172.17.120.28</td>
-						    <td>Boot Agent</td>
-						    <td>On Line</td>
-						</tr>
-					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "3" /></td>
-						    <td>eng-29</td>
-						    <td>172.17.120.29</td>
-						    <td>HD1 Part1</td>
-						    <td>On Line</td>
-						</tr>
-					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "4" /></td>
-						    <td>eng-30</td>
-						    <td>172.17.120.30</td>
-						    <td>HD2 Part2</td>
-						    <td>On Line</td>
-						</tr>
-                        <tr>
 					    	<td><input type = "checkbox" id = "computer_id" value = "1" /></td>
-						    <td>eng-31</td>
-						    <td>172.17.120.31</td>
-						    <td>MBR</td>
-						    <td>Off Line</td>
+						    <td>OSDAEimg srv 3</td>
+						    <td>200GB</td>
+						    <td>160GB</td>
+						    <td>40GB</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                    80%
+                                    </div>
+                                </div>
+                            </td>
 						</tr>
 					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "2" /></td>
-						    <td>eng-32</td>
-						    <td>172.17.120.32</td>
-						    <td>Boot Agent</td>
-						    <td>On Line</td>
-						</tr>
-					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "3" /></td>
-						    <td>eng-33</td>
-						    <td>172.17.120.33</td>
-						    <td>HD1 Part1</td>
-						    <td>On Line</td>
-						</tr>
-					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "4" /></td>
-						    <td>eng-34</td>
-						    <td>172.17.120.34</td>
-						    <td>HD2 Part2</td>
-						    <td>On Line</td>
-						</tr>
-                        <tr>
 					    	<td><input type = "checkbox" id = "computer_id" value = "1" /></td>
-						    <td>eng-35</td>
-						    <td>172.17.120.35</td>
-						    <td>MBR</td>
-						    <td>Off Line</td>
+						    <td>OSDAEimg srv 4</td>
+						    <td>200GB</td>
+						    <td>190GB</td>
+						    <td>10GB</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+                                    95%
+                                    </div>
+                                </div>
+                            </td>
 						</tr>
-					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "2" /></td>
-						    <td>eng-36</td>
-						    <td>172.17.120.36</td>
-						    <td>Boot Agent</td>
-						    <td>On Line</td>
-						</tr>
-					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "3" /></td>
-						    <td>eng-37</td>
-						    <td>172.17.120.37</td>
-						    <td>HD1 Part1</td>
-						    <td>On Line</td>
-						</tr>
-					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "4" /></td>
-						    <td>eng-38</td>
-						    <td>172.17.120.38</td>
-						    <td>HD2 Part2</td>
-						    <td>On Line</td>
-						</tr>
+                        
 				  	</tbody>
 				</table>
-
 			</div><!-- Center Column -->
 	
             <!-- Right column -->
 			<div class="col-sm-3">
-				<h2>Computer details</h2>
+				<h2>All Servers details</h2>
 			    <img src="images/Computer-icon.png" class="img-responsive center-block" alt="125x125">
 			    <h2 class="text-center">eng-23</h2>
 			    <form class="form-horizontal">
