@@ -1,4 +1,4 @@
 osdae
 =====
 
-Operative System Deployment Administrator Enviroment
+Operating System Deployment Administrator Enviroment

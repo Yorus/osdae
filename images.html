@@ -6,7 +6,7 @@
 	<!-- Config mobile friendly -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Copmuters page</title>
+	<title>Images page</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
@@ -46,8 +46,8 @@
             <!-- Menu -->
 			<div class="col-sm-8">
 				<ul class="nav nav-tabs">
-			        <li class="active"><a href="#"><span class="glyphicon glyphicon-file"></span>  Computers</a></li>
-			        <li><a href="images.html"><span class="glyphicon glyphicon-hdd"></span> Images</a></li>
+			        <li><a href="computers.html"><span class="glyphicon glyphicon-file"></span>  Computers</a></li>
+			        <li class="active"><a href="images.html"><span class="glyphicon glyphicon-hdd"></span> Images</a></li>
 			        <li><a href="servers.html"><span class="glyphicon glyphicon-cloud"></span> Servers</a></li>
 			        <li><a href="scan.html"><span class="glyphicon glyphicon-eye-open"></span> Scan</a></li>
 			        <li><a href="settings.html"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
@@ -56,6 +56,7 @@
    			    </ul>
 		    </div><!-- Menu -->
             
+                    
             <!-- Search -->
 		    <div class="col-sm-3">
 		    	<div class="input-group input-group-sm">
@@ -66,17 +67,29 @@
 		
 		</div> <!-- head row -->
 
+        <!-- Menu row -->
+        <div class="row">
+            <div class="col-sm-1">
+				
+			</div>
+            <div class="col-sm-11">
+                <ul class="nav nav-pills">
+                    <li><a href="#"><span class="glyphicon glyphicon-transfer"></span>  Move</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-arrow-right"></span> Copy</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-remove"></span> Remove</a></li>
+                </ul>
+            </div>
+        </div><!-- Menu row -->
         	
         <!-- Breadcrumb row -->
 		<div class="row">
 			<div class="col-sm-8">
 			    <ul class="breadcrumb">
 			        <li><a href="#"><span class="glyphicon glyphicon-home"></span> OSDAE srv 1</a></li>
-			        <li><a href="#"><span class="glyphicon glyphicon-globe"></span> All Computers</a></li>
-			        <li class="active">eng-23</li>
+			        <li class="active"><span class="glyphicon glyphicon-align-justify"></span> All Servers</li>
 			    </ul>
-				</div>
-		   <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
 			    <ul class="breadcrumb">
 			        <li><a href="#"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></li>
 			        <li><a href="#"><span class="glyphicon glyphicon-arrow-right"></span> Go</a></li>
@@ -91,24 +104,24 @@
             <!-- Left Column -->
 			<div class="col-sm-2">
 				
-				<!-- Computer lists -->
+				<!-- Servers lists -->
 			    <div class="list-group">
 			    	<a href="#" class="list-group-item active">
-			            <span class="glyphicon glyphicon-globe"></span> All Computers <span class="badge">228</span>
+			            <span class="glyphicon glyphicon-align-justify"></span> All Servers <span class="badge">119GB/800GB</span>
 			        </a>
 			        <a href="#" class="list-group-item">
-			            <span class="glyphicon glyphicon-list"></span> Building 1 <span class="badge">25</span>
+			            <span class="glyphicon glyphicon-minus"></span> OSDAEimg srv 1 <span class="badge">67GB/200GB</span>
 			        </a>
 			        <a href="#" class="list-group-item">
-			            <span class="glyphicon glyphicon-list"></span> Buliding 2 <span class="badge">145</span>
+			            <span class="glyphicon glyphicon-minus"></span> OSDAEimg srv 2 <span class="badge">10GB/200GB</span>
 			        </a>
 			        <a href="#" class="list-group-item">
-			            <span class="glyphicon glyphicon-list"></span> Building 3 <span class="badge">50</span>
+			            <span class="glyphicon glyphicon-minus"></span> OSDAEimg srv 3 <span class="badge">30GB/200GB</span>
 			        </a>
 			        <a href="#" class="list-group-item">
-			            <span class="glyphicon glyphicon-list"></span> Building 4 <span class="badge">8</span>
+			            <span class="glyphicon glyphicon-minus"></span> OSDAEimg srv 4 <span class="badge">12GB/200GB</span>
 			        </a>
-			    </div> <!-- Computer lists -->
+			    </div> <!-- Servers lists -->
 
                 
 			    <div id="accordion" class="panel-group">
@@ -179,7 +192,7 @@
                 
                     <!-- Left Column -->
                     <div class="col-sm-6">
-                        <h2><span class="glyphicon glyphicon-globe"></span> All Computers <span class="badge">228</span></h2>
+                        <h2><span class="glyphicon glyphicon-align-justify"></span> All Servers <span class="badge">6</span></h2>
 				    </div><!-- Left Column -->
                                     
                     <!-- Right Column -->
@@ -199,125 +212,63 @@
 					<thead>
 					    <tr>
 					    	<th><input type = "checkbox" id = "computer_id" value = "1" /></th>
-					      	<th>Hostname</th>
-					      	<th>IP</th>
-					      	<th>Boot Mode</th>
-					      	<th>Status</th>
-					    </tr>
+					      	<th>Image Name</th>
+					      	<th>File Size</th>
+                            <th>OS</th>
+                            <th>Master</th>
+                            <th>Server</th>
+                        </tr>
 				  	</thead>
 				  	<tbody>
 					    <tr>
 					    	<td><input type = "checkbox" id = "computer_id" value = "1" /></td>
+						    <td>Win7.v7.r3</td>
+						    <td>25GB</td>
+						    <td>Windows 7</td>
 						    <td>eng-23</td>
-						    <td>172.17.120.23</td>
-						    <td>MBR</td>
-						    <td>Off Line</td>
+                            <td>OSDAEimg srv 1</td>
 						</tr>
 					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "2" /></td>
-						    <td>eng-24</td>
-						    <td>172.17.120.24</td>
-						    <td>Boot Agent</td>
-						    <td>On Line</td>
-						</tr>
-					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "3" /></td>
-						    <td>eng-25</td>
-						    <td>172.17.120.25</td>
-						    <td>HD1 Part1</td>
-						    <td>On Line</td>
-						</tr>
-					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "4" /></td>
-						    <td>eng-26</td>
-						    <td>172.17.120.26</td>
-						    <td>HD2 Part2</td>
-						    <td>On Line</td>
-						</tr>
-                        <tr>
 					    	<td><input type = "checkbox" id = "computer_id" value = "1" /></td>
-						    <td>eng-27</td>
-						    <td>172.17.120.27</td>
-						    <td>MBR</td>
-						    <td>Off Line</td>
-						</tr>
-					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "2" /></td>
-						    <td>eng-28</td>
-						    <td>172.17.120.28</td>
-						    <td>Boot Agent</td>
-						    <td>On Line</td>
-						</tr>
-					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "3" /></td>
-						    <td>eng-29</td>
-						    <td>172.17.120.29</td>
-						    <td>HD1 Part1</td>
-						    <td>On Line</td>
-						</tr>
-					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "4" /></td>
+						    <td>Ubuntu14.10.v7.r3</td>
+						    <td>10GB</td>
+						    <td>GNU/Linux</td>
 						    <td>eng-30</td>
-						    <td>172.17.120.30</td>
-						    <td>HD2 Part2</td>
-						    <td>On Line</td>
+                            <td>OSDAEimg srv 2</td>
+						</tr>
+					    <tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "1" /></td>
+						    <td>Win7.v7.r4</td>
+						    <td>30GB</td>
+						    <td>Windows 7</td>
+						    <td>eng-23</td>
+                            <td>OSDAEimg srv 1</td>
+						</tr>
+					    <tr>
+					    	<td><input type = "checkbox" id = "computer_id" value = "1" /></td>
+						    <td>Ubuntu14.10.v7.r4</td>
+						    <td>12GB</td>
+						    <td>GNU/Linux</td>
+						    <td>eng-30</td>
+                            <td>OSDAEimg srv 4</td>
 						</tr>
                         <tr>
 					    	<td><input type = "checkbox" id = "computer_id" value = "1" /></td>
-						    <td>eng-31</td>
-						    <td>172.17.120.31</td>
-						    <td>MBR</td>
-						    <td>Off Line</td>
-						</tr>
-					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "2" /></td>
-						    <td>eng-32</td>
-						    <td>172.17.120.32</td>
-						    <td>Boot Agent</td>
-						    <td>On Line</td>
-						</tr>
-					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "3" /></td>
-						    <td>eng-33</td>
-						    <td>172.17.120.33</td>
-						    <td>HD1 Part1</td>
-						    <td>On Line</td>
-						</tr>
-					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "4" /></td>
-						    <td>eng-34</td>
-						    <td>172.17.120.34</td>
-						    <td>HD2 Part2</td>
-						    <td>On Line</td>
+						    <td>Ubuntu14.10.v7.r4</td>
+						    <td>12GB</td>
+						    <td>GNU/Linux</td>
+						    <td>eng-30</td>
+                            <td>OSDAEimg srv 1</td>
 						</tr>
                         <tr>
 					    	<td><input type = "checkbox" id = "computer_id" value = "1" /></td>
-						    <td>eng-35</td>
-						    <td>172.17.120.35</td>
-						    <td>MBR</td>
-						    <td>Off Line</td>
+						    <td>Win7.v7.r4</td>
+						    <td>30GB</td>
+						    <td>Windows 7</td>
+						    <td>eng-23</td>
+                            <td>OSDAEimg srv 3</td>
 						</tr>
-					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "2" /></td>
-						    <td>eng-36</td>
-						    <td>172.17.120.36</td>
-						    <td>Boot Agent</td>
-						    <td>On Line</td>
-						</tr>
-					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "3" /></td>
-						    <td>eng-37</td>
-						    <td>172.17.120.37</td>
-						    <td>HD1 Part1</td>
-						    <td>On Line</td>
-						</tr>
-					    <tr>
-					    	<td><input type = "checkbox" id = "computer_id" value = "4" /></td>
-						    <td>eng-38</td>
-						    <td>172.17.120.38</td>
-						    <td>HD2 Part2</td>
-						    <td>On Line</td>
-						</tr>
+                        
 				  	</tbody>
 				</table>
 
@@ -325,8 +276,8 @@
 	
             <!-- Right column -->
 			<div class="col-sm-3">
-				<h2>Computer details</h2>
-			    <img src="images/Computer-icon.png" class="img-responsive center-block" alt="125x125">
+				<h2>Image Details</h2>
+			    <img src="images/Hard-Disk-Internal-icon256.png" class="img-responsive center-block" alt="125x125">
 			    <h2 class="text-center">eng-23</h2>
 			    <form class="form-horizontal">
 			        <div class="form-group">
